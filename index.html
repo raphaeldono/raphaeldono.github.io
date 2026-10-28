@@ -273,6 +273,22 @@
   @media (max-width: 900px) { .method-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 600px) { .method-grid { grid-template-columns: 1fr; } }
 
+  /* GALLERY, em sala */
+  .gallery-wrap { margin-top: 72px; max-width: 980px; }
+  .gallery-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+  .gallery-head .gtag { font-family: var(--mono); font-size: 0.72rem; color: var(--accent-deep); letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; }
+  .gallery-head p { font-size: 1.02rem; color: var(--fg-muted); line-height: 1.5; }
+  .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .gallery figure { margin: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); background: var(--bg); transition: all 0.25s; }
+  .gallery figure:hover { transform: translateY(-3px); box-shadow: 0 16px 34px -18px rgba(0,0,0,0.2); border-color: var(--line-strong); }
+  .gallery .ph { aspect-ratio: 3/4; overflow: hidden; background: var(--bg-3); }
+  .gallery .ph img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.02); transition: transform 0.5s; }
+  .gallery figure:hover .ph img { transform: scale(1.03); }
+  .gallery figcaption { padding: 14px 18px 16px; }
+  .gallery figcaption .cap-tag { font-family: var(--mono); font-size: 0.66rem; color: var(--accent-deep); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; margin-bottom: 6px; }
+  .gallery figcaption .cap-text { font-size: 0.92rem; color: var(--fg-muted); line-height: 1.45; }
+  @media (max-width: 640px) { .gallery { grid-template-columns: 1fr; max-width: 420px; } }
+
   /* QUOTE */
   .quote-block { margin-top: 80px; padding: 56px 0; border-top: 1px solid var(--line); }
   .quote-block blockquote { font-weight: 500; font-size: clamp(1.7rem, 3.4vw, 2.8rem); letter-spacing: -0.03em; line-height: 1.2; color: var(--fg); max-width: 900px; }
@@ -601,6 +617,29 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="gallery-wrap">
+      <div class="gallery-head">
+        <span class="gtag">// em sala</span>
+        <p>Educação financeira na prática: palestras para equipes, participantes e grupos.</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <div class="ph"><img src="assets/palestra-educacao-financeira.jpg" alt="Raphael apresentando a palestra Finanças Pessoais e Educação Financeira" loading="lazy"></div>
+          <figcaption>
+            <div class="cap-tag">/ finanças pessoais</div>
+            <div class="cap-text">Palestra de finanças pessoais e educação financeira para uma turma de colaboradores.</div>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="ph"><img src="assets/palestra-ipca.jpg" alt="Raphael explicando o IPCA diante de um slide com os grupos de produtos e serviços do índice" loading="lazy"></div>
+          <figcaption>
+            <div class="cap-tag">/ inflação na prática</div>
+            <div class="cap-text">O que é o IPCA, o que ele mede e por que isso muda a conta de quem planeja a aposentadoria.</div>
+          </figcaption>
+        </figure>
+      </div>
     </div>
 
     <div class="quote-block">
