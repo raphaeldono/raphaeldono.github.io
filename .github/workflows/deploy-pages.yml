@@ -18,6 +18,7 @@ jobs:
           cp index.html _site/
           cp -r assets _site/
           cp -r brand _site/
+          echo "raphaeldono.com.br" > _site/CNAME
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
